@@ -108,22 +108,6 @@ function render(){
     document.getElementById("text-area").innerHTML = resultHTML;
 }
 
-// 처음 방법
-// function render(){
-//     let resultHTML="";
-//     for(let i=0;i<taskList.length; i++){ //taskList배열안에 있는 것을 하나하나 꺼내..
-//         resultHTML+=`<div class="task">
-//         <div>${taskList[i]}</div>
-//         <div>
-//             <button id="checkBtn" class="checkBtn"><i class="fa-solid fa-check"></i></button>
-//             <button id="trashBtn" class="trashBtn"><i class="fa-solid fa-trash"></i></button>
-//         </div>
-//     </div>`
-//     }
-
-//     document.getElementById("text-area").innerHTML = resultHTML;
-// }
-
 
 // 체크버튼 누를 때 이벤트 적용
 function checkBtn(id){
@@ -159,11 +143,9 @@ function trashBtn(id){
                 }
                 break;
             }
-            
         }
         render();
     } 
-
 }
 
 function filter(event){
