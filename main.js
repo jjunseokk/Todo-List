@@ -63,15 +63,6 @@ function add(){
 
     render();
 }
-// 처음 방법
-// function add(){
-//     let taskContent = taskInput.value
-//     taskList.push(taskContent);
-//     console.log(taskList);
-
-//     render();
-// }
-
 
 // 버튼을 눌렀을 때 추가해야할 리스트 출력 내용
 function render(){
